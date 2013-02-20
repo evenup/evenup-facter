@@ -1,0 +1,4 @@
+fixtures:
+  symlinks:
+    facter: "#{source_dir}"
+
