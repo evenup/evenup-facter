@@ -1,2 +1,5 @@
+v1.0.5:
+  Fix for non-ec2 hosts
+  Use redhat-lsb-core on RHEL 6.4 based machines
 v1.0.4:
   Initial public release
