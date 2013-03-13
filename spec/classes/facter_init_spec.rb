@@ -18,5 +18,10 @@ describe 'facter', :type => :class do
 
   end
 
+  context 'on RHEL 6.4 based machines' do
+    let(:facts) { { :lsbdistrelease => 6.4 } }
+    it { should contain_package('redhat-lsb-core') }
+  end
+
 end
 
