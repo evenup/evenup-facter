@@ -7,8 +7,17 @@
 #
 class facter {
 
-  package { 'redhat-lsb':
-    ensure  => 'installed',
+  case $::lsbdistrelease {
+    '6.4':    {
+      package { 'redhat-lsb-core':
+        ensure  => 'installed',
+      }
+    }
+    default:  {
+      package { 'redhat-lsb':
+        ensure  => 'installed',
+      }
+    }
   }
 
   package { 'virt-what':
