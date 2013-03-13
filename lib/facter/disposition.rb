@@ -1,6 +1,6 @@
 Facter.add(:disposition) do
   hostname = Facter.value('hostname')
-  sg = Facter.value('ec2_security_groups')
+  sg = Facter.value('ec2_security_groups') || sg = ''
 
   setcode do
     disposition = ''
