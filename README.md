@@ -13,6 +13,11 @@ To install:
   include facter
 </pre>
 
+Note:
+-----
+On RHEL 6.4 based machines redhat-lsb-core is used rather than redhat-lsb
+due to the large number of dependencies with redhat-lsb.
+
 Contribute:
 -----------
 * Fork it
