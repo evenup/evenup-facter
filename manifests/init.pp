@@ -25,7 +25,7 @@ class facter {
   }
 
   package { 'facter':
-    ensure  => '1.6.17-1.el6',
+    ensure  => '1.7.0-1.el6',
   }
 
   file { '/etc/facts.d':
