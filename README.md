@@ -2,6 +2,9 @@ What is it?
 ===========
 
 A Puppet module that installs facter and sets needed environment variables.
+This module is slightly different in that it modifies the default facter 
+install to support EC2 VPC instances until bug [7599] (http://projects.puppetlabs.com/issues/7559) is resolved
+in Facter 2.0.
 
 Released under the Apache 2.0 licence
 
