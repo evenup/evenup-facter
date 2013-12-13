@@ -8,6 +8,8 @@ Facter.add(:disposition) do
       'dev'
     elsif hostname.match(/^\w\w\d\w\-demo.*/) || sg.match(/^\w+\-demo$/)
       'demo'
+    elsif hostname.match(/^\w\w\d\w\-qa.*/) || sg.match(/^\w+\-qa$/)
+      'qa'
     elsif hostname.match(/^vag.*/)
       'vagrant'
     else
