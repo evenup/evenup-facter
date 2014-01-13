@@ -7,16 +7,13 @@
 #
 class facter {
 
-  case $::lsbdistrelease {
-    '6.4':    {
-      package { 'redhat-lsb-core':
-        ensure  => 'installed',
-      }
+  if versioncmp("${::lsbdistrelease}", '6.3') > 0 {
+    package { 'redhat-lsb-core':
+      ensure  => 'installed',
     }
-    default:  {
-      package { 'redhat-lsb':
-        ensure  => 'installed',
-      }
+  } else {
+    package { 'redhat-lsb':
+      ensure  => 'installed',
     }
   }
 
