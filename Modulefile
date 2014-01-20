@@ -1,5 +1,5 @@
 name 'evenup-facter'
-version '1.1.1'
+version '1.1.2'
 author 'Justin Lambert <jlambert@letsevenup.com>'
 license 'Apache'
 summary 'Manages facter.'
