@@ -1,3 +1,4 @@
+  Remove facter_dot_d.rb
 20140113 - v1.1.1
   Support RHEL 6.5 based distros
 v1.1.0:
