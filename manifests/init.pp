@@ -26,10 +26,10 @@ class facter {
   }
 
   file { '/etc/facts.d':
-    ensure  => 'directory',
-    owner   => 'puppet',
-    group   => 'puppet',
-    mode    => '0555',
+    ensure => 'directory',
+    owner  => 'puppet',
+    group  => 'puppet',
+    mode   => '0555',
   }
 
   # TODO - there needs to be a better way to get facter facts to work
